@@ -1,0 +1,24 @@
+# ===== Backend (FastAPI / Python) =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+venv/
+.venv/
+pip-wheel-metadata/
+
+# ===== Frontend (React / Vite) =====
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== OS / Editor =====
+.DS_Store
+.idea/
+.vscode/
