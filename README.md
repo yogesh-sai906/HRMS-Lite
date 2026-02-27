@@ -13,7 +13,7 @@ Tech stack:
 ## Project Structure
 
 ```text
-Ethara/
+HRMS-Lite/
 |- backend/
 |  |- app/
 |  |- requirements.txt
