@@ -249,7 +249,7 @@ export default function Attendance() {
                   onChange={(e) => {
                     setSearchId(e.target.value);
                     if (!e.target.value) {
-                      loadTodayPresent(); // 🔁 reset to today
+                      loadTodayPresent(); // reset to today
                     }
                   }}
                 />
@@ -263,7 +263,7 @@ export default function Attendance() {
               </div>
             </CardHeader>
 
-            <CardContent className="flex-1 overflow-y-auto p-0">
+            <CardContent className="flex-1 overflow-y-auto p-2">
               <Table>
                 <TableHeader className="sticky top-0 bg-background">
                   <TableRow>
