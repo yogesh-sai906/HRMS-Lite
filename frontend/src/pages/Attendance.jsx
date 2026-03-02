@@ -49,7 +49,8 @@ export default function Attendance() {
         variant: "destructive",
       });
     }
-  }, [toast]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // 🔹 Load who is present today (DEFAULT)
   const loadTodayPresent = useCallback(async () => {

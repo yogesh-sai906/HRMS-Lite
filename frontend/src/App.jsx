@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
 import Employees from "./pages/Employees"
 import Attendance from "./pages/Attendance"
 import { Toaster } from "./components/ui/toaster"
@@ -30,6 +31,19 @@ export default function App() {
                   }`
                 }
               >
+                Dashboard
+              </NavLink>
+
+              <NavLink
+                to="/employees"
+                className={({ isActive }) =>
+                  `text-sm transition ${
+                    isActive
+                      ? "text-primary font-medium"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`
+                }
+              >
                 Employees
               </NavLink>
 
@@ -53,7 +67,8 @@ export default function App() {
         {/* Content */}
         <main className="flex-1 w-full">
           <Routes>
-            <Route path="/" element={<Employees />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/employees" element={<Employees />} />
             <Route path="/attendance" element={<Attendance />} />
           </Routes>
         </main>
